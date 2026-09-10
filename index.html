@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Baraka & Aneth Wedding</title>
+
+<meta property="og:title"
+      content="Baraka & Aneth Wedding">
+
+<meta property="og:description"
+      content="You are specially invited to celebrate the wedding of Baraka & Aneth.">
+
+<meta property="og:image"
+      content="https://drive.google.com/thumbnail?id=1HoNyUhBt8WuFpcTkK-z7Nn_pZQoVtR3e&sz=w1600">
+
+<meta property="og:type"
+      content="website">
+
+<meta property="og:url"
+      content="https://script.google.com/macros/s/AKfycbxJv7now7mxDGFbCzGA6zlZoLRP661-YdJkD-HagI8ROWPR_RfCKISZ-WX4QUjiD6rrJA/exec">
+
+<meta name="twitter:card"
+      content="summary_large_image">
+
+<meta name="twitter:title"
+      content="Baraka & Aneth Wedding">
+
+<meta name="twitter:description"
+      content="You are specially invited to celebrate with us.">
+
+<meta name="twitter:image"
+      content="https://drive.google.com/thumbnail?id=1HoNyUhBt8WuFpcTkK-z7Nn_pZQoVtR3e&sz=w1600">
+
+<style>
+
+*{
+box-sizing:border-box;
+}
+
+html,body{
+margin:0;
+padding:0;
+width:100%;
+height:100%;
+font-family:Georgia,serif;
+background:#18140f;
+}
+
+body{
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.cover{
+width:100%;
+min-height:100vh;
+
+background:
+linear-gradient(#0004,#0008),
+url("https://drive.google.com/thumbnail?id=1HoNyUhBt8WuFpcTkK-z7Nn_pZQoVtR3e&sz=w1600")
+center/cover no-repeat;
+
+display:flex;
+align-items:flex-end;
+justify-content:center;
+
+padding:40px 20px 60px;
+}
+
+.content{
+text-align:center;
+color:white;
+max-width:500px;
+width:100%;
+}
+
+.small{
+font-size:15px;
+letter-spacing:4px;
+color:#d4af37;
+}
+
+h1{
+font-size:48px;
+font-weight:normal;
+margin:15px 0;
+text-shadow:0 2px 10px #000;
+}
+
+.gold{
+color:#d4af37;
+}
+
+.date{
+font-size:18px;
+letter-spacing:5px;
+margin-bottom:30px;
+}
+
+.open{
+display:inline-block;
+
+padding:16px 32px;
+
+border:1px solid #d4af37;
+border-radius:30px;
+
+background:#191510;
+color:#d4af37;
+
+font-weight:bold;
+text-decoration:none;
+
+box-shadow:0 4px 20px #0008;
+}
+
+.open:active{
+transform:scale(.97);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="cover">
+
+<div class="content">
+
+<div class="small">
+YOU ARE INVITED
+</div>
+
+<h1>
+Baraka
+<span class="gold">&</span>
+Aneth
+</h1>
+
+<div class="date">
+21 • 11 • 2026
+</div>
+
+<a class="open"
+   id="openInvitation"
+   href="#">
+OPEN INVITATION
+</a>
+
+</div>
+
+</div>
+
+
+<script>
+
+const params =
+new URLSearchParams(window.location.search);
+
+const row =
+params.get("row");
+
+const app =
+"https://script.google.com/macros/s/AKfycbxJv7now7mxDGFbCzGA6zlZoLRP661-YdJkD-HagI8ROWPR_RfCKISZ-WX4QUjiD6rrJA/exec";
+
+if(row){
+
+document.getElementById("openInvitation").href =
+app + "?row=" + encodeURIComponent(row);
+
+}else{
+
+document.getElementById("openInvitation").href =
+app;
+
+}
+
+</script>
+
+</body>
+</html>
