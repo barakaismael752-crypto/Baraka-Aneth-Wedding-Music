@@ -163,24 +163,24 @@ OPEN INVITATION
 
 </div>
 
-
 <script>
 
 const params = new URLSearchParams(window.location.search);
 
 const row = params.get("row");
 
+const action = params.get("action") || "view";
+
 const app = "https://script.google.com/macros/s/AKfycbxJv7now7mxDGFbCzGA6zlZoLRP661-YdJkD-HagI8ROWPR_RfCKISZ-WX4QUjiD6rrJA/exec";
 
-let destination = app;
-
 if (row) {
-    destination += "?row=" + encodeURIComponent(row);
+    window.location.replace(
+        app + "?row=" + encodeURIComponent(row) +
+        "&action=" + encodeURIComponent(action)
+    );
 }
 
-// Mgeni akifungua link anaingia moja kwa moja kwenye E-Card
-window.location.replace(destination);
-
 </script>
+
 </body>
 </html>
