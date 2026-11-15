@@ -15,12 +15,9 @@
 <meta property="og:description"
       content="You are specially invited to celebrate the wedding of Baraka & Aneth.">
 
-<meta property="og:image" content="https://barakaismael752-crypto.github.io/Baraka-Aneth-Wedding-Music/wedding%20cover.png">
-<meta property="og:image:secure_url" content="https://barakaismael752-crypto.github.io/Baraka-Aneth-Wedding-Music/wedding%20cover.png">
-<meta property="og:image:type" content="image/png">
-<meta property="og:image:width" content="667">
-<meta property="og:image:height" content="1000">
-<meta property="og:image:alt" content="Baraka and Aneth Wedding Invitation">
+<meta property="og:image"
+content="https://barakaismael752-crypto.github.io/Baraka-Aneth-Wedding-Music/wedding%20cover.png">
+
       
 
 <meta property="og:type"
@@ -166,21 +163,28 @@ OPEN INVITATION
 
 </div>
 
+
 <script>
 
-const params = new URLSearchParams(window.location.search);
+const params =
+new URLSearchParams(window.location.search);
 
-const row = params.get("row");
+const row =
+params.get("row");
 
-const action = params.get("action") || "view";
+const app =
+"https://script.google.com/macros/s/AKfycbxJv7now7mxDGFbCzGA6zlZoLRP661-YdJkD-HagI8ROWPR_RfCKISZ-WX4QUjiD6rrJA/exec";
 
-const app = "https://script.google.com/macros/s/AKfycbxJv7now7mxDGFbCzGA6zlZoLRP661-YdJkD-HagI8ROWPR_RfCKISZ-WX4QUjiD6rrJA/exec";
+if(row){
 
-if (row) {
-    window.location.replace(
-        app + "?row=" + encodeURIComponent(row) +
-        "&action=" + encodeURIComponent(action)
-    );
+document.getElementById("openInvitation").href =
+app + "?row=" + encodeURIComponent(row);
+
+}else{
+
+document.getElementById("openInvitation").href =
+app;
+
 }
 
 </script>
